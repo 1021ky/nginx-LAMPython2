@@ -1,0 +1,9 @@
+---
+
+mysql_client_packages:
+ - mysql-client-5.7
+ - libmysqlclient-dev
+ - python-mysqldb
+ - python3-mysqldb
+
+

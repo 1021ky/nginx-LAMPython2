@@ -1,0 +1,32 @@
+---
+
+- include_vars: main.yml
+
+- name: add apt repository for installation python
+  apt_repository:
+    repo: ppa:jonathonf/python-2.7
+    state: present
+    update_cache: yes
+
+- name: add bash_profile to vagrant
+  file: 
+    path: /home/vagrant/.bash_profile
+    state: touch
+
+- name: install python2_pakcages
+  apt: 
+    name: "{{item}}"
+    state: present 
+  with_items: "{{ python2_packages }}"
+
+# install pip
+- name: Download pip installer
+  get_url:
+    url: https://bootstrap.pypa.io/get-pip.py
+    dest: /usr/src/
+  become: yes
+
+- name: install pip
+  command: python /usr/src/get-pip.py
+  become: yes
+  

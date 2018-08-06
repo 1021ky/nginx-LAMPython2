@@ -1,0 +1,5 @@
+---
+
+python2_packages:
+- python2.7=2.7.14-2ubuntu1~16.04.york0
+- python2.7-dev

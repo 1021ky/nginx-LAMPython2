@@ -1,0 +1,12 @@
+---
+mysql_user: developer
+mysql_password: developer
+mysql_server_packages:
+ - python-mysqldb
+ - mysql-server-5.7
+ - libmysqld-dev
+mysql_allowed_client:
+ - localhost
+ - 192.168.30.0/255.255.255.0
+
+

@@ -1,0 +1,9 @@
+---
+
+- include_vars: main.yml
+
+- pip:
+    name: "{{ item.name }}"
+    version: "{{ item.version }}"
+    executable: pip2
+  with_items: "{{ pip_packages }}"

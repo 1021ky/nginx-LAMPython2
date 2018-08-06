@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/log/nginx":{"create":true,"guestpath":"/var/log/nginx","hostpath":"/Users/vaivailx/Vagrant/nginx-LAMPython2/log/nginx","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/vaivailx/Vagrant/nginx-LAMPython2","disabled":false,"__vagrantfile":true}}}
